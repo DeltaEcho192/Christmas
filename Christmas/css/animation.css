@@ -1,0 +1,53 @@
+@font-face{
+    font-family: Christmas;
+    src: url(christmas_font.otf);
+}
+body{
+    background-color: pink;
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    font-family: Christmas;
+    text-align: center;
+    font-size: 100px;
+    top: 5%;
+    left: 33%;
+    position: absolute;
+}
+.main{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    
+    
+}
+.head{
+    margin: 100px;
+    border: 50px;
+}
+.body{
+    
+    margin: 100px;
+    border: 50px;
+}
+.notes{
+    margin: 100px;
+    border: 50px;
+}
+.image_body{
+    width: 400px;
+    transform: translateY(15px);
+}
+.image_head{
+    width: 400px;
+    animation: head_bobbing 2s infinite;
+}
+.image_notes{
+    width: 400px;
+    transform: translateX(-50px)
+}
+@keyframes head_bobbing{
+    25% {transform: rotate(15deg)}
+    75% {transform: rotate(-15deg)}
+    
+}
